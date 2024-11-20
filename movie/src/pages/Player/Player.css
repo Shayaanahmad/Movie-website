@@ -1,0 +1,61 @@
+/* Player.css */
+.player {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  color: white;
+}
+
+.player img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.player iframe {
+  border-radius: 10px;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.player-info p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.player-info button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.player-info button:hover {
+  transform: scale(1.05);
+}
+
+.player-info button:first-child {
+  background-color: #ff006e;
+  color: white;
+}
+
+.player-info button:last-child {
+  background-color: #444;
+  color: white;
+}

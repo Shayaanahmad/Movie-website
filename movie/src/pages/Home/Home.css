@@ -1,0 +1,232 @@
+.hero{
+    position: relative;
+}
+.banner-img{
+    width: 100%;
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+.hero-caption{
+    position: absolute;
+    width: 100%;
+    padding: 6%;
+    bottom: 0;
+}
+.caption-img{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+
+}
+.hero-caption p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.hero-btns{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.hero-btns .btn img{
+    width: 25px;
+
+}
+.hero-btns .btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hero-btns .btn.dark-btn{
+    color: white;
+    background: #6d6d6eb3;
+}
+.hero-btns .btn:hover{
+    background: #ffffffbf;
+
+}
+.hero-btns .btn.dark-btn:hover{
+    background: #6d6d6e66;
+}
+.more-cards{
+    padding-left: 6%;
+}
+.search-results {
+    margin: 20px;
+    color: white;
+  }
+  
+  .results-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .result-card {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .result-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .movie-list {
+    margin: 20px;
+    color: white;
+  }
+  
+  .movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    color: white;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .movie-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  /* Movie list header (title and sort button) */
+.movie-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Adds space between the header and the movie cards */
+  }
+  
+  /* Sort button styling */
+  .sort-button {
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sort-button:hover {
+    background-color: #444;
+  }
+  
+  .movie-list-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-right: 20px; /* Adds space between the title and the sort button */
+  }
+  
+ /* Movie card grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create flexible grid columns */
+    gap: 30px; /* Space between cards */
+    margin-top: 30px; /* Space between the header and movie cards */
+  }
+  
+  /* Movie card styling */
+  .movie-card {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    /* Ensure that the movie card does not overlap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .movie-card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  
+@media (max-width: 1024px) {
+    .hero-caption .title-cards{
+        display: none;
+    }
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 800px){
+    .hero-caption{
+        padding: 4%;
+
+    }
+    .caption-img{
+        margin-bottom: 10px;
+        width: 40%;
+    }
+    .hero-caption p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .hero-btns .btn img{
+        width: 20px;
+    }
+    
+}
+@media (max-width: 500px){
+    .caption-img{
+        display: none;
+
+    }
+    .hero-btns .btn img{
+        width: 15px;
+    }
+    .hero-btns .btn {
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}

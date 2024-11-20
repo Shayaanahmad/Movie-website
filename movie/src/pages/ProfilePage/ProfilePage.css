@@ -1,0 +1,17 @@
+.profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .profile-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-page p {
+    font-size: 1rem;
+  }
+  
